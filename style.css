@@ -19,7 +19,7 @@ body .blog-recent[data-style*="classic_enhanced"] .post-meta {
 }
 
 body #header-outer, body[data-header-color="dark"] #header-outer, body[data-slide-out-widget-area-style="fullscreen-alt"] #header-outer {
-    border-bottom:1px solid rgba(0,0,0,0.1)
+    border-bottom:1px solid rgba(0,0,0,0.1);
 }
 
 .aboutexrex {
