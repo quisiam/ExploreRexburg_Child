@@ -107,7 +107,7 @@ endwhile; endif;
 			} else {
 				echo '<div id="post-area" class="col '.$std_minimal_class.' span_9">';
             }; ?>
-            <!-- Eborall Header Insert -->
+            <!-- Eborall: Moved Header to be within the same wrap as the main article -->
             
             <?php if(get_post_format() != 'quote' && get_post_format() != 'status' && get_post_format() != 'aside') { ?>
 			
@@ -198,6 +198,8 @@ endwhile; endif;
 								<?php } ?>
 						</div><!--/section-title-->
 					</div><!--/row-->
+    
+            <!----- END EBORALL ----->
 				
 			<?php }
 			
