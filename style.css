@@ -454,7 +454,6 @@ overflow: hidden;
     font-family: Roboto, sans-serif;
 }
 
-
 @media only screen and (max-width: 1000px) and (min-width: 690px){
     .container, #post-area.standard-minimal.full-width-content article.post .inner-wrap {
         max-width: 90% !important;
@@ -487,6 +486,7 @@ overflow: hidden;
 
 
 
+/* --------- MOBILE MEDIA FIXES ------------- */
 
 @media only screen and (max-width: 767px){
     .single #post-area {
@@ -569,8 +569,7 @@ overflow: hidden;
         width: 100%;
         margin-bottom: 2%;
     }
-  
-    
+   
     
     #page-header-bg .span_6 h1, .single.single-post .section-title h1 {
         line-height:40px !important;
