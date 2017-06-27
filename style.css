@@ -454,6 +454,7 @@ overflow: hidden;
     font-family: Roboto, sans-serif;
 }
 
+
 @media only screen and (max-width: 1000px) and (min-width: 690px){
     .container, #post-area.standard-minimal.full-width-content article.post .inner-wrap {
         max-width: 90% !important;
