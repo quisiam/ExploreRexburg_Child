@@ -8,13 +8,12 @@ Template: salient
 Version: 2.0
 */
 
-                                                          
 body .blog-recent[data-style*="classic_enhanced"] .post-meta {
     text-align:center;
 }
 
 .blog-recent[data-style*="classic_enhanced"] .inner-wrap {
-    border:1px solid #dedede !important;
+    border:1px solid #dedede;
 }
 
 body #header-outer, body[data-header-color="dark"] #header-outer, body[data-slide-out-widget-area-style="fullscreen-alt"] #header-outer {
@@ -30,8 +29,7 @@ body #header-outer, body[data-header-color="dark"] #header-outer, body[data-slid
 
 }
 
-/* ----- AD STYLING ----- */ 
-
+/* AD STYLING */ 
 .adlabel {
     display: block;
     color: #505050;
@@ -43,11 +41,11 @@ body #header-outer, body[data-header-color="dark"] #header-outer, body[data-slid
 }
 
 .flickity-slider .featured {
-    display:none;
+    display:none !important;
 }
 
 .meta-category{
-    display:none;
+    display:none !important;
 }
 
 @media only screen and (min-width: 1000px){
@@ -64,11 +62,13 @@ body #header-outer, body[data-header-color="dark"] #header-outer, body[data-slid
 }
 
 
-.span_12.light .masonry.classic_enhanced .masonry-blog-item h3.title, .span_12.light .blog-recent[data-style="classic_enhanced"] h3.title { 
+.span_12.light .masonry.classic_enhanced .masonry-blog-item h3.title, .span_12.light .blog-recent[data-style="classic_enhanced"] h3.title {
+    
     font-size:20px !important;
 }
 
 .masonry.classic_enhanced article.post .post-meta a, .masonry.classic_enhanced .post-header, .masonry.classic_enhanced article.post .excerpt, .blog-recent[data-style*="classic_enhanced"] .excerpt, .blog-recent[data-style*="classic_enhanced"] .post-meta a {
+    
     font-size:16px;
 }
 
@@ -85,21 +85,23 @@ body #header-outer, body[data-header-color="dark"] #header-outer, body[data-slid
     margin-top:1em;
 }
 
+.excerpt p {
+    color:#888 !important;
+}
 
 .ascend #footer-outer #footer-widgets .col ul li a:hover{
     color:#fff !important;
+    
+}
+.col-wpea-md-4 {
+    width: 23.5%;
+    margin-bottom: 2%;
 }
 
-
-    .col-wpea-md-4 {
-        width: 23.5%;
-        margin-bottom: 2%;
-    }
-    
 .col-wpea-xs-1, .col-wpea-sm-1, .col-wpea-md-1, .col-wpea-lg-1, .col-wpea-xs-2, .col-wpea-sm-2, .col-wpea-md-2, .col-wpea-lg-2, .col-wpea-xs-3, .col-wpea-sm-3, .col-wpea-md-3, .col-wpea-lg-3, .col-wpea-xs-4, .col-wpea-sm-4, .col-wpea-md-4, .col-wpea-lg-4, .col-wpea-xs-5, .col-wpea-sm-5, .col-wpea-md-5, .col-wpea-lg-5, .col-wpea-xs-6, .col-wpea-sm-6, .col-wpea-md-6, .col-wpea-lg-6, .col-wpea-xs-7, .col-wpea-sm-7, .col-wpea-md-7, .col-wpea-lg-7, .col-wpea-xs-8, .col-wpea-sm-8, .col-wpea-md-8, .col-wpea-lg-8, .col-wpea-xs-9, .col-wpea-sm-9, .col-wpea-md-9, .col-wpea-lg-9, .col-wpea-xs-10, .col-wpea-sm-10, .col-wpea-md-10, .col-wpea-lg-10, .col-wpea-xs-11, .col-wpea-sm-11, .col-wpea-md-11, .col-wpea-lg-11, .col-wpea-xs-12, .col-wpea-sm-12, .col-wpea-md-12, .col-wpea-lg-12 {
-        padding:0;
-        margin-right:2%;
-    }
+    padding:0;
+    margin-right:2%;
+}
 
 .col-wpea-md-4:nth-child(8), .col-wpea-md-4:nth-child(16) {
     margin-right:0;
@@ -124,17 +126,25 @@ body #header-outer, body[data-header-color="dark"] #header-outer, body[data-slid
 .nectar-recent-posts-slider .excerpt {
     font-style:italic;
 }
-    .flickity-viewport {
-        border-radius:1em;
-}
     
-.nectar-recent-posts-slider{
-border-radius: 8px;
-
-}
-
 .firstarticle .post-featured-img {
     display:none !important;
+}
+
+.nectar-recent-posts-slider{
+    border-radius: 8px;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+
+}
+.row {
+    margin-left: 0 !important; 
+    margin-right:0!important;
+}
+
+.sbi_photo_wrap {
+    background:#fff;
+    
 }
 
 .instagramtitle {
@@ -149,15 +159,8 @@ border-radius: 8px;
     margin-top: 35px;
 }
 
-.sectionheadline{
-    border-bottom: 1px solid #ddd;
-    padding-top: 35px;
-    padding-bottom: .5rem;
-}
 
-
-
-/* ------------- SINGLE POST STYLING -------------- */
+/* -------- SINGLE POST ------- */
 
 .single .heading-title[data-header-style="default_minimal"] {
     padding-top:0 !important;
@@ -165,7 +168,7 @@ border-radius: 8px;
 }
 
 .single .heading-title[data-header-style="default_minimal"] #single-below-header span {
-    float: left;
+    float: left !important;
 }
 
 
@@ -174,14 +177,13 @@ border-radius: 8px;
     text-align:left;
     font-size:45px;
     line-height:1.04;
-    padding-top:0;
+    padding-top:0 !important;
 }
 
 body .wpb_text_column h2:last-child, body .wpb_text_column h3:last-child{
     font-size:32px;
     line-height: 1.15;
-    font-weight:700;
-    
+    font-weight:700;  
 }
 
 .single article {
@@ -194,13 +196,13 @@ body .wpb_text_column h2:last-child, body .wpb_text_column h3:last-child{
 }
 
 .single .meta-comment-count li {
-    margin-left:0;
+    margin-left:0 !important;
 }
 
 html .single-post #single-meta {
     top: 0;
     margin-top: 0;
-    margin-bottom:3em;   
+    margin-bottom:3em;
 }
 
 html .single-post #single-meta {
@@ -210,7 +212,7 @@ html .single-post #single-meta {
 
 .single #single-below-header {
      float:left;
-    }
+}
 
 body #page-header-bg h1, html body .row .col.section-title h1, .nectar-box-roll .overlaid-content h1 {
     margin-bottom:10px;
@@ -224,8 +226,6 @@ body #page-header-bg h1, html body .row .col.section-title h1, .nectar-box-roll 
     width:320px;
 }
 
-/* MAIN CONTENT WRAP */ 
-
 .single .main-content #post-area, .single .main-content .widget li, .archive .main-content .widget li{ 
 background:#fff;
 border-radius:8px;
@@ -236,14 +236,11 @@ perspective: 1000px;
 max-width:780px;
 }
 
-/* SIDEBAR */ 
-
 .ascend #sidebar div ul li, .single .ascend #sidebar .widget.widget_categories li, .single .ascend #sidebar .widget.widget_pages li, .single .ascend #sidebar .widget.widget_nav_menu li {
         margin-bottom:1em;
         padding:15px !important;
         border:1px solid #dedede !important;
 }
-
 
 .masonry.classic_enhanced .masonry-blog-item .inner-wrap, .blog-recent[data-style*="classic_enhanced"] .inner-wrap {
     box-shadow:none !important;
@@ -251,7 +248,7 @@ max-width:780px;
     
     
 .single .ascend #sidebar div ul li, .single .ascend #sidebar .widget.widget_categories li, .single .ascend #sidebar .widget.widget_pages li, .single .ascend #sidebar .widget.widget_nav_menu li {
-    padding:25px;
+    padding:25px !important;
 
 }
 
@@ -262,15 +259,13 @@ max-width:780px;
 #sidebar .widget li img {
     margin-bottom:5px;
 }
-
-/* HOME PAGE POPULAR POSTS SIDEBAR */ 
 .home .popular-posts li{
     background:#fff;
     border-radius:8px;
     perspective: 1000px;   
     padding:10px 0;
     text-align: left;
-    padding-top:0;
+    padding-top:0 !important;
     margin-bottom:1em;
 }
 
@@ -278,12 +273,8 @@ max-width:780px;
     margin-bottom:10px;
 }
 
-.home .popular-posts li:last-child{
-    margin-bottom:0;
-}
-
-
 /* COMMENTS */
+
 .single .comment {
     background:#fff; 
     border-radius:8px;
@@ -298,7 +289,8 @@ max-width:780px;
 
 
 .ascend .comment-list {
-    border-bottom:none !important; padding-bottom:20px !important;
+    border-bottom:none !important; 
+    padding-bottom:20px !important;
 }
 
 .ascend .comments-section[data-author-bio="false"] .comment-wrap{
@@ -313,13 +305,10 @@ max-width:780px;
     font-size:12px;
 }
 
- ___ _   _   _  ___ ___ _  _ ___ 
- | _ \ | | | | |/ __|_ _| \| / __|
- |  _/ |_| |_| | (_ || || .` \__ \
- |_| |____\___/ \___|___|_|\_|___/
-                                  
-                                                
-/* -- WP Event Aggregator -- */
+
+.home .popular-posts li:last-child{
+    margin-bottom:0;
+}
 
 .wpp-post-title {
     font-weight:500;
@@ -336,6 +325,12 @@ max-width:780px;
     line-height:1.58;
     font-family:Georgia, Serif;
     
+}
+
+@media (min-width: 780px){
+    .single .span_3 {
+    width:320px;
+    }
 }
 
 .home .wpp-list img{
@@ -361,7 +356,7 @@ max-width:780px;
 .wpea_frontend_archive .archive-event .wepa_event {
     background:#fff;
     border-radius:8px;
-    overflow:hidden; 
+    overflow:hidden;
 }
 
 .wpea_frontend_archive .event_date {
@@ -373,10 +368,6 @@ max-width:780px;
 }
 
 .wpea_frontend_archive .event_date {
-    
-}
-
-.wpea_frontend_archive .event_date {
     width:60px;
 }
 
@@ -384,7 +375,7 @@ body #page-header-bg .span_6 span.subheader, body .row .col.section-title > span
     font-weight:lighter;
 }
 
-/* -------- EXPLORE REXBURG BUSINESS DIRECTORY ------- */
+/* -------- BUSINESS DIRECTORY ------- */
 
 .bus-buttons {
     border-radius:8px;
@@ -396,7 +387,7 @@ body #page-header-bg .span_6 span.subheader, body .row .col.section-title > span
 }
 
 
-/*---------WOOCOMMERCE SHOPPE -------- */
+/*----------------SHOPPE ------------ */
 
 .woocommerce div.product {
         padding: 30px;
@@ -414,54 +405,46 @@ body #page-header-bg .span_6 span.subheader, body .row .col.section-title > span
     padding:20px;
 }
 
-
-  __  __ ___ ___ ___   _     ___ _____  _____ ___ 
- |  \/  | __|   \_ _| /_\   | __|_ _\ \/ / __/ __|
- | |\/| | _|| |) | | / _ \  | _| | | >  <| _|\__ \
- |_|  |_|___|___/___/_/ \_\ |_| |___/_/\_\___|___/
-                                                  
-
-
-@media (min-width: 780px){
-    .single .span_3 {
-    width:320px;
-    }
-}
+/* -------------- MEDIA FIXES -------------- */
 
 @media only screen and (min-width: 800px){
+.container, body[data-header-format="left-header"] .container, .woocommerce-tabs .full-width-content .tab-container, #post-area.standard-minimal.full-width-content article.post .inner-wrap{
+    padding: 0 35px !important;
+}
     
-    .container, body[data-header-format="left-header"] .container, .woocommerce-tabs .full-width-content .tab-container, #post-area.standard-minimal.full-width-content article.post .inner-wrap{
-        padding: 0 35px !important;
-    }
+    
     .nectar-recent-posts-slider .flickity-page-dots, .recent-post-container {
         padding: 0 65px !important;
     }
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 690px){
-    
     .single .heading-title[data-header-style="default_minimal"] {
         border-bottom: 8px solid #49bb8a; 
         padding-bottom:15px;
         margin-bottom: 20px !important;
-    
         }
-    
-    #sidebar >div {
-        margin-bottom: 30px;
-    }
-
-
-    #post-area p:first-child{
-        font-size:20px;
-        color:#999;
-        font-style:italic;
-        font-family: Roboto, sans-serif;
-    }
 }
 
+.single #single-below-header span {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+#sidebar >div {
+    margin-bottom: 30px;
+}
+
+
+#post-area p:first-child{
+    font-size:20px;
+    color:#999;
+    font-style:italic;
+    font-family: Roboto, sans-serif;
+}
+
+
 @media only screen and (max-width: 1000px) and (min-width: 690px){
-    
     .container, #post-area.standard-minimal.full-width-content article.post .inner-wrap {
         max-width: 90% !important;
     }
@@ -480,6 +463,7 @@ body #page-header-bg .span_6 span.subheader, body .row .col.section-title > span
     
 }
 @media only screen and (max-width: 768px){ 
+    
     .col-wpea-md-4 {
         width: 42%;
         float: left;
@@ -499,20 +483,22 @@ body #page-header-bg .span_6 span.subheader, body .row .col.section-title > span
     .single #post-area {
         padding-right: 20px !important;
     }
-        .container, #post-area.standard-minimal.full-width-content article.post .inner-wrap {
-            max-width: 95% !important;
-        }
+    
+    .container, #post-area.standard-minimal.full-width-content article.post .inner-wrap {
+        max-width: 95% !important;
+    }
 
 
-        #post-area p{
-            font-size:17px;
+    #post-area p{
+        font-size:17px;
 
-        }
+    }
 
-        .single #post-area, .single .main-content .widget, .single .comment-body{ 
-            padding:20px;
+    .single #post-area, .single .main-content .widget, .single .comment-body{ 
 
-        }
+        padding:20px;
+
+    }
         
     #post-area p:first-child{ 
         padding-left:20px;
@@ -521,16 +507,17 @@ body #page-header-bg .span_6 span.subheader, body .row .col.section-title > span
     
         /* H1 TITLE */ 
     #page-header-bg .span_6 h1, .single.single-post .section-title h1 {
+
         font-size:36px !important;
         line-height:1.25;
     }
     
     body .wpb_text_column h2:last-child, body .wpb_text_column h3:last-child{
-        font-size:22px;
-        line-height: 1.15;
-        font-weight:700;
+    font-size:22px;
+    line-height: 1.15;
+    font-weight:700;
     
-    }
+}
 
     .single #single-below-header span {
         font-size:18px;
