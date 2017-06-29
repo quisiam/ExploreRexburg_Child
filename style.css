@@ -244,6 +244,7 @@ max-width:780px;
 
 .masonry.classic_enhanced .masonry-blog-item .inner-wrap, .blog-recent[data-style*="classic_enhanced"] .inner-wrap {
     box-shadow:none !important;
+    border:1px solid #dedede !important;
 }
     
     
